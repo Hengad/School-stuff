@@ -1,7 +1,7 @@
-#include "source.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include "source.h"
 
 char *mystrcat(char *dest, const char *src)
 {
