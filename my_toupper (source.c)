@@ -3,6 +3,7 @@
 #include <string.h>
 
 // They both do the same thing. Just different implementation.
+// Also change '?' to '!' and '.' to '!!!'. Because that was the assignment.
 
 char *my_toupper1(char *dest, const char *src)
 {
@@ -23,7 +24,6 @@ char *my_toupper1(char *dest, const char *src)
 			tmp[0] = 143;
 		else if (*next == 'ö')
 			tmp[0] = 153;
-		// LISÄSIN HUVIKSENI VIELÄ TUEN POHJOISMAISILLE KIRJAIMILLE.
 		else
 			tmp[0] = toupper((unsigned char)*next);
 		strcat(dest, tmp);
