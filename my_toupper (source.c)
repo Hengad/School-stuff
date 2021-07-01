@@ -2,8 +2,8 @@
 #include <ctype.h>
 #include <string.h>
 
-// They both do the same thing. Just different implementation.
-// Also change '?' to '!' and '.' to '!!!'. Because that was the assignment.
+// They both do the same thing. Just different implementations.
+// The functions also change '?' to '!' and '.' to '!!!'. Because WE LOVE SHOUTING!!! RIGHT!
 
 char *my_toupper1(char *dest, const char *src)
 {
