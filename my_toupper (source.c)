@@ -2,6 +2,8 @@
 #include <ctype.h>
 #include <string.h>
 
+// They both do the same thing. Just different implementation.
+
 char *my_toupper1(char *dest, const char *src)
 {
 	strcpy(dest, "\0");
@@ -15,13 +17,13 @@ char *my_toupper1(char *dest, const char *src)
 		else if (*next == '.')
 			for (int i = 0; i < 3; i++)
 				tmp[i] = '!';
-		else if (*next == 'ä')
+		else if (*next == 'Ã¤')
 			tmp[0] = 142;
-		else if (*next == 'å')
+		else if (*next == 'Ã¥')
 			tmp[0] = 143;
-		else if (*next == 'ö')
+		else if (*next == 'Ã¶')
 			tmp[0] = 153;
-		// LISÄSIN HUVIKSENI VIELÄ TUEN POHJOISMAISILLE KIRJAIMILLE.
+		// LISÃ„SIN HUVIKSENI VIELÃ„ TUEN POHJOISMAISILLE KIRJAIMILLE.
 		else
 			tmp[0] = toupper((unsigned char)*next);
 		strcat(dest, tmp);
