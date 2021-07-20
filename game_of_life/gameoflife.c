@@ -54,7 +54,7 @@ void printGameArea(const GameArea *a)
         for(unsigned int j = 0; j < a->x_size; j++)
         {
             if(a->cells[i][j] == ALIVE)
-                printf("*");
+                printf("■");
             else
                 printf(" ");
         }
